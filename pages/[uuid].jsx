@@ -378,6 +378,7 @@ export default function Home({params}) {
 
 
         {/* <!-- buttons --> */}
+        {/* <div class="flex gap-4 fixed bottom-5 sm:right-5 xs:right-[4.5rem] xxs:right-[3rem] xxxs:right-5 z-100"> */}
         <div class="flex gap-4 fixed bottom-5 sm:right-5 xs:right-[4.5rem] xxs:right-[3rem] xxxs:right-5 z-100">
           <button onClick={() => router.push(`tel:${property.customer.mobile_number}`)} class="bg-blue-400 text-white px-4 py-2 rounded-md flex items-center gap-3">
             <Image class="w-8" src={Phone} alt="" />
