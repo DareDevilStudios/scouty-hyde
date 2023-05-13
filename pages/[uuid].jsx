@@ -171,7 +171,7 @@ export default function Home({params}) {
 
               {/* <!-- address --> */}
               <div class="mt-4 flex items-center gap-2">
-                <svg class="w-6 " fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                <svg className='text-black w-6' fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z">
                   </path>
@@ -198,10 +198,10 @@ export default function Home({params}) {
                   )}
 
                 <div class="flex items-center">
-                  <h1 class="text-2xl font-bold">₹ {property.price}</h1>
+                  <h1 class="text-2xl text-black font-bold">₹ {property.price}</h1>
                   {
                     property.per_unit !== 'total' && (
-                      <span class="text-md text-gray-500 font-md self-end">/{property.per_unit}</span>)
+                      <span class="text-md text-gray-800 font-md self-end">/{property.per_unit}</span>)
 
                   }
                 </div>
