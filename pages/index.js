@@ -94,7 +94,7 @@ export default function Home() {
         {/* <!-- navbar --> */}
 
         <nav class="bg-[#f5f7fb] w-full border-gray-200">
-          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
+          <div class=" flex flex-wrap items-center justify-between mx-auto px-4">
             <a href="/" class="flex items-center">
               <Image src={Logo} class="w-60 mr-3" alt="Flowbite Logo" />
             </a>
@@ -103,7 +103,7 @@ export default function Home() {
 
         {/* <!-- body --> */}
 
-        <div class="main w-full pb-6 px-4">
+        <div class="main w-full flex justify-center pb-6 px-4">
           <div class="container flex md:flex-row flex-col bg-white rounded-3xl px-5 py-12 drop-shadow-2xl">
 
             {/* <!-- left side --> */}
@@ -146,7 +146,7 @@ export default function Home() {
               {/* <!-- Owner and property bookmark --> */}
               <div class="flex gap-4 items-center mt-4">
                 <span class="text-gray-800 text-lg font-semibold">{property.project}</span>
-                <div class="flex items-center gap-1">
+                {/* <div class="flex items-center gap-1">
                   <svg class="w-8 h-8 text-transparent" fill="#fbcb50" stroke="currentColor"
                     stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true">
@@ -156,14 +156,14 @@ export default function Home() {
                   </svg>
                   <span class="text-gray-800 text-lg font-md">{property.avg_rating}</span>
                   <span class="text-gray-500 text-lg">({property.rating_count})</span>
-                </div>
-                <svg class="w-10 h-10 text-gray-500 border-2 rounded-full p-1" fill="grey" stroke="currentColor"
+                </div> */}
+                {/* <svg class="w-10 h-10 text-gray-500 border-2 rounded-full p-1" fill="grey" stroke="currentColor"
                   stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z">
                   </path>
-                </svg>
+                </svg> */}
               </div>
 
               {/* <!-- address --> */}
@@ -239,7 +239,7 @@ export default function Home() {
                 </svg> */}
               </div>
               {/* <!-- details --> */}
-              <div class="grid grid-cols-2 mt-6 gap-4">
+              <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 mt-6 gap-4">
                 <div class="flex flex-col">
                   <span class="text-gray-800 text-lg font-semibold">Dimension</span>
                   <span class="text-gray-600 text-md">{property.dimension}</span>
